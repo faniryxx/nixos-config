@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  # please change the username & home direcotry to your own
   home.username = "faniryxx";
   home.homeDirectory = "/home/faniryxx";
 
@@ -11,20 +10,8 @@
   # Packages that should be installed to the user profile.
   # Packages declared here will only be available to the user faniryxx
   home.packages = with pkgs; [
-    zsh
     neofetch
-    zip
-    xz
-    unzip
-    dnsutils
-    which
-    gnupg
-    # it provides the command `nom` works just like `nix` with more details log output
-    nix-output-monitor
-    btop  # replacement of htop/nmon
-    lm_sensors # for `sensors` command
-    pciutils # lspci
-    usbutils # lsusb
+    zsh
   ];
 
   # basic configuration of git, please change to your own
