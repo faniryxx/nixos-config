@@ -102,7 +102,7 @@
   wget
   curl
   
-  vscode
+  jetbrains-pycharm-community
   
   cowsay
   ];
