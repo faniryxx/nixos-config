@@ -8,68 +8,21 @@
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
 
-  # link all files in `./scripts` to `~/.config/i3/scripts`
-  # home.file.".config/i3/scripts" = {
-  #   source = ./scripts;
-  #   recursive = true;   # link recursively
-  #   executable = true;  # make all files executable
-  # };
-
-  # encode the file content in nix configuration file directly
-  # home.file.".xxx".text = ''
-  #     xxx
-  # '';
-
-  # set cursor size and dpi for 4k monitor
-  xresources.properties = {
-    "Xcursor.size" = 16;
-    "Xft.dpi" = 172;
-  };
-
   # Packages that should be installed to the user profile.
+  # Packages declared here will only be available to the user faniryxx
   home.packages = with pkgs; [
-    # here is some command line tools I use frequently
-    # feel free to add your own or remove some of them
-
     zsh
     neofetch
-
-    # archives
     zip
     xz
     unzip
-    p7zip
-
-    dnsutils  # `dig` + `nslookup`
-    
-    # cowsay
-    # file
+    dnsutils
     which
     gnupg
-
-    # nix related
-    #
-    # it provides the command `nom` works just like `nix`
-    # with more details log output
+    # it provides the command `nom` works just like `nix` with more details log output
     nix-output-monitor
-
-    # productivity
-    # hugo # static site generator
-    # glow # markdown previewer in terminal
-
     btop  # replacement of htop/nmon
-    # iotop # io monitoring
-    # iftop # network monitoring
-
-    # system call monitoring
-    # strace # system call monitoring
-    # ltrace # library call monitoring
-    # lsof # list open files
-
-    # system tools
-    # sysstat
     lm_sensors # for `sensors` command
-    # ethtool
     pciutils # lspci
     usbutils # lsusb
   ];
