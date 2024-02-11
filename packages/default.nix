@@ -7,6 +7,7 @@
     environment.systemPackages = with pkgs; [
         cowsay
         curl
+        discord
         git
         gnome.gnome-tweaks
         gnomeExtensions.alphabetical-app-grid
