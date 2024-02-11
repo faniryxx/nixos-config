@@ -15,7 +15,7 @@
         gnomeExtensions.color-picker
         gnomeExtensions.dash-to-dock
         gnomeExtensions.pop-shell
-        neofetch
+        pfetch
         pinta
         spicetify-cli
         spotify
