@@ -42,6 +42,9 @@
     LC_TIME = "fr_FR.UTF-8";
   };
 
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
+
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
