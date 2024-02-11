@@ -42,7 +42,7 @@
 
     dnsutils  # `dig` + `nslookup`
     
-    cowsay
+    # cowsay
     # file
     which
     gnupg
