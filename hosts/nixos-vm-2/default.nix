@@ -102,7 +102,7 @@
   wget
   curl
   
-  jetbrains-pycharm-community
+  jetbrains.pycharm-community
   
   cowsay
   ];
