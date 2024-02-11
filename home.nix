@@ -10,8 +10,6 @@
   # Packages that should be installed to the user profile.
   # Packages declared here will only be available to the user faniryxx
   home.packages = with pkgs; [
-    neofetch
-    zsh
   ];
 
   # basic configuration of git, please change to your own

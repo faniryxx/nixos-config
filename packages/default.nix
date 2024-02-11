@@ -15,6 +15,7 @@
         gnomeExtensions.color-picker
         gnomeExtensions.dash-to-dock
         gnomeExtensions.pop-shell
+        neofetch
         pinta
         spicetify-cli
         spotify
@@ -23,6 +24,7 @@
         vlc
         vscode
         wget
+        zsh
     ];
 
     # Do not install these packages
