@@ -9,12 +9,17 @@
         curl
         git
         gnome.gnome-tweaks
+        gnomeExtensions.alphabetical-app-grid
         gnomeExtensions.blur-my-shell
+        gnomeExtensions.color-picker
         gnomeExtensions.dash-to-dock
         gnomeExtensions.pop-shell
-        gnomeExtensions.color-picker
+        pinta
+        spicetify-cli
+        spotify
         terminator
         vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+        vlc
         vscode
         wget
     ];
