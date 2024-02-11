@@ -61,6 +61,14 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  # asusctl
+  services = {
+    asusd = {
+      enable = true;
+      enableUserService = true;
+    };
+  };
+
   # Enable sound with pipewire.
   sound.enable = true;
   hardware.pulseaudio.enable = false;
@@ -100,9 +108,9 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
-    #asusctl
-    #supergfxctl
-    #gnomeExtensions.supergfxctl-gex
+    asusctl
+    supergfxctl
+    gnomeExtensions.supergfxctl-gex
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
