@@ -15,6 +15,7 @@
         gnomeExtensions.blur-my-shell
         gnomeExtensions.color-picker
         gnomeExtensions.dash-to-dock
+        gnomeExtensions.media-controls
         gnomeExtensions.pop-shell
         pfetch
         pinta
