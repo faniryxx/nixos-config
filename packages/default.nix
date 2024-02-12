@@ -10,6 +10,7 @@
         discord
         git
         gnome.gnome-tweaks
+        gnome.gnome-terminal
         gnomeExtensions.alphabetical-app-grid
         gnomeExtensions.blur-my-shell
         gnomeExtensions.color-picker
