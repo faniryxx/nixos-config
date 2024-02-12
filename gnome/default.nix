@@ -44,6 +44,17 @@
             "org/gnome/shell/extensions/pop-shell" = {
                 hint-color-rgba="rgba(105, 105, 105, 1)";
             };
+            # Extensions enable by default
+            "org/gnome/shell" = {
+                enabled-extensions=[
+                    "AlphabeticalAppGrid@stuarthayhurst"
+                    "blur-my-shell@aunetx" 
+                    "dash-to-dock@micxgx.gmail.com" 
+                    "launch-new-instance@gnome-shell-extensions.gcampax.github.com" 
+                    "mediacontrols@cliffniff.github.com"
+                    "pop-shell@system76.com"
+                ];
+            };
         };
     };
 }

@@ -9,8 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ../../packages/default.nix
-      ../../keyboard-shortcuts/default.nix
-      ../../gnome-extensions/default.nix
+      ../../gnome/default.nix
     ];
 
   # Bootloader.
