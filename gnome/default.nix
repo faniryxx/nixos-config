@@ -17,6 +17,7 @@
                 switch-to-workspace-3=["<Super>3"];
                 switch-to-workspace-4=["<Super>4"];
                 toggle-fullscreen=["<Super>f"];
+                unmaximize=[];
             };
             # To avoid conflicts
             "org/gnome/mutter/keybindings" = {
