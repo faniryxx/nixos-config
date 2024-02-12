@@ -40,6 +40,10 @@
                 command="asusctl profile -n";
                 name="Toggle next asusctl profile";
             };
+            # Pop-shell active hint color
+            "org/gnome/shell/extensions/pop-shell" = {
+                hint-color-rgba="rgba(105, 105, 105, 1)";
+            };
         };
     };
 }
