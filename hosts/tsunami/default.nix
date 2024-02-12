@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
       ../../packages/default.nix
       ../../keyboard-shortcuts/default.nix
+      ../../gnome-extensions/default.nix
     ];
 
   # Bootloader.
