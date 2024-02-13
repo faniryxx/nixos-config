@@ -17,5 +17,9 @@
 
   environment.systemPackages = with pkgs; [
     openrgb-with-all-plugins
+    i2c-tools
   ];
+
+  # OpenRGB udev rules
+  services.udev.extraRules = builtins.readFile ./60-openrgb.rules;
 }
