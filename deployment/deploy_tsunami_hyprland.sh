@@ -2,5 +2,8 @@
 # Rebuild system
 nixos-rebuild switch --flake /home/faniryxx/nixos-config#tsunami-hyprland
 
-# Copy hyprland configuration to correct folder
+echo "Copying hyprland configuration to correct folder..."
 cp /home/faniryxx/nixos-config/.config/hypr/tsunami.conf /home/faniryxx/.config/hypr/hyprland.conf
+
+echo "Copying waybar configuration to correct folder..."
+cp /home/faniryxx/nixos-config/.config/waybar/config /home/faniryxx/.config/waybar/config
