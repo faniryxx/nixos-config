@@ -9,8 +9,10 @@
         networkmanager_dmenu
         networkmanagerapplet
         orchis-theme
+        pavucontrol
         sassc
         themechanger
+        waybar
         wofi
     ];
 }
