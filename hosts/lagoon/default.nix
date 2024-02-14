@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ../../packages/default.nix
+      ../../packages/gnome.nix
       ../../gnome/default.nix
       ../../system/default.nix
     ];

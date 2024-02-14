@@ -1,4 +1,4 @@
-# Common args for all hosts
+# Common system parameters
 { config, pkgs, ... }:
 
 {
@@ -18,6 +18,7 @@
     # Enable flakes
     nix.settings.experimental-features = ["nix-command" "flakes"];
 
+    # Set zsh as default shell
     programs.zsh.enable = true;
     users.defaultUserShell = pkgs.zsh;
 
@@ -63,8 +64,7 @@
         description = "faniryxx";
         extraGroups = [ "networkmanager" "wheel" ];
         packages = with pkgs; [
-        firefox
-        #  thunderbird
+            firefox
         ];
     };
 
