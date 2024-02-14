@@ -10,7 +10,7 @@
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
     // "modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "battery#bat2", "tray"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "battery#bat2"],
+    "modules-right": ["pulseaudio", "network", "bluetooth", "cpu", "memory", "battery"],
     // Modules configuration
     "hyprland/workspaces": {
          "disable-scroll": false,
@@ -162,6 +162,12 @@
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "bluetooth": {
+        "format-connected": " connected",
+        "format-off": " off",
+        "format": " disconnected",
+        "on-click": "bluetooth-manager"
     }
 }
 
