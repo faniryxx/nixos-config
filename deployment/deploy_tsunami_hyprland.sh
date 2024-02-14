@@ -7,3 +7,4 @@ cp /home/faniryxx/nixos-config/.config/hypr/tsunami.conf /home/faniryxx/.config/
 
 echo "Copying waybar configuration to correct folder..."
 cp /home/faniryxx/nixos-config/.config/waybar/config /home/faniryxx/.config/waybar/config
+cp /home/faniryxx/nixos-config/.config/waybar/style.css /home/faniryxx/.config/waybar/style.css
