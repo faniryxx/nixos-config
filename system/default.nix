@@ -6,6 +6,11 @@
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
 
+    # Add font-awesome for waybar icons
+    fonts.packages = with pkgs; [
+        font-awesome
+    ];
+
     # Enable networking
     networking.networkmanager.enable = true;
 
