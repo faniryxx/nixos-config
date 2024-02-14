@@ -9,17 +9,15 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ../../packages/default.nix
+      ../../packages/hyprland.nix
       ../../system/default.nix
     ];
 
-  networking.hostName = "tsunami-test"; # Define your hostname.
+  networking.hostName = "tsunami"; # Define your hostname.
 
   environment.systemPackages = with pkgs; [
     openrgb-with-all-plugins
     i2c-tools
-    gnome.gnome-terminal
-    libsForQt5.dolphin
-    wofi
   ];
 
   # Enable hyprland

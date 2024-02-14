@@ -8,6 +8,7 @@
         curl
         discord
         git
+        gnome.gnome-terminal
         pfetch
         pinta
         spicetify-cli

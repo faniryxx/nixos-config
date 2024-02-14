@@ -26,10 +26,10 @@
           }
         ];
       };
-      tsunami = nixpkgs.lib.nixosSystem {
+      tsunami-gnome = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./hosts/tsunami
+          ./hosts/tsunami-gnome
 
           # make home-manager as a module of nixos
           # so that home-manager configuration will be deployed automatically when executing `nixos-rebuild switch`
@@ -43,10 +43,10 @@
           }
         ];
       };
-      tsunami-test = nixpkgs.lib.nixosSystem {
+      tsunami-hyprland = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./hosts/tsunami-test
+          ./hosts/tsunami-hyprland
 
           # make home-manager as a module of nixos
           # so that home-manager configuration will be deployed automatically when executing `nixos-rebuild switch`

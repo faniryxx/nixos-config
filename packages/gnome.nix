@@ -3,10 +3,8 @@
 { config, pkgs, ... }:
 
 {
-    # Packages to be installed by default for all hosts
     environment.systemPackages = with pkgs; [
         gnome.gnome-tweaks
-        gnome.gnome-terminal
         gnomeExtensions.alphabetical-app-grid
         gnomeExtensions.blur-my-shell
         gnomeExtensions.color-picker
