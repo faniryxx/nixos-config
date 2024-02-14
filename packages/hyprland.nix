@@ -3,8 +3,7 @@
 
 {
     environment.systemPackages = with pkgs; [
-        bluez
-        libsForQt5.dolphin
+        # libsForQt5.dolphin
         libsForQt5.qt5ct
         libsForQt5.qtstyleplugin-kvantum
         networkmanager_dmenu

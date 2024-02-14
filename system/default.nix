@@ -39,7 +39,7 @@
 
     # Enable sound with pipewire.
     sound.enable = true;
-    hardware.pulseaudio.enable = false;
+    hardware.pulseaudio.enable = true;
     security.rtkit.enable = true;
     services.pipewire = {
     enable = true;
@@ -53,6 +53,11 @@
     # no need to redefine it in your config for now)
     #media-session.enable = true;
     };
+
+    # Enable Bluetooth
+    hardware.bluetooth.enable = true; # enables support for Bluetooth
+    hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+    services.blueman.enable = true;
 
     # Define a user account. Don't forget to set a password with ‘passwd’.
     users.users.faniryxx = {
