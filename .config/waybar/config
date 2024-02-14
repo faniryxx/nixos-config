@@ -167,7 +167,7 @@
         "format-connected": " connected",
         "format-off": " off",
         "format": " disconnected",
-        "on-click": "bluetooth-manager"
+        "on-click": "blueman-manager"
     }
 }
 
