@@ -9,10 +9,10 @@
 
   outputs = inputs@{ nixpkgs, home-manager, ... }: {
     nixosConfigurations = {
-      lagoon = nixpkgs.lib.nixosSystem {
+      lagoon-gnome = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./hosts/lagoon
+          ./hosts/lagoon-gnome
 
           # make home-manager as a module of nixos
           # so that home-manager configuration will be deployed automatically when executing `nixos-rebuild switch`
