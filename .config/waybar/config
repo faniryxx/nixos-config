@@ -21,7 +21,9 @@
          "persistent-workspaces": {
             "DP-2": [1, 2, 3, 4],
             "HDMI-A-1": [5]
-         }
+         },
+         "on-scroll-up": "hyprctl dispatch workspace -1",
+         "on-scroll-down": "hyprctl dispatch workspace +1"    
     },
     "keyboard-state": {
         "numlock": true,
