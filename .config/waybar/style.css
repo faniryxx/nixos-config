@@ -20,7 +20,7 @@ window#waybar {
     margin-left: 10px;
 }
 .modules-right {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 window#waybar.hidden {

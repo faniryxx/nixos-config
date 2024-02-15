@@ -11,7 +11,7 @@
     // "modules-center": ["hyprland/workspaces",  "pulseaudio", "network", "bluetooth", "cpu", "memory", "battery", "clock"],
     "modules-center": ["clock"],
     // "modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "battery#bat2", "tray"],
-    "modules-right": ["pulseaudio", "custom/sep", "network", "custom/sep", "bluetooth", "custom/sep", "battery"],
+    "modules-right": ["pulseaudio", "custom/sep", "network", "custom/sep", "bluetooth", "custom/sep", "battery", "custom/wlogout"],
 
     "margin-top": 5,
 	"margin-left": 10,
@@ -99,8 +99,9 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-        "format": "{:%b %d, %H:%M}",
-        "format-alt": "{:%d-%m-%Y}"
+        // "format": "{:%b %d, %H:%M}",
+        "format-alt": "{:%d-%m-%Y}",
+        "format": "{:%H:%M | %d/%m/%Y} "
     },
     "cpu": {
         "format": "{usage}% ",
@@ -187,6 +188,11 @@
         "format-off": " off",
         "format": " on",
         "on-click": "blueman-manager"
+    },
+    "custom/wlogout": {
+        "format": " ⏻ ",
+        "interval": "once",
+        "on-click": "wlogout -c 5 -r 5 -p layer-shell"
     }
 }
 

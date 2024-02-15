@@ -13,6 +13,7 @@
         sassc
         themechanger
         waybar
+        wlogout
         wofi
     ];
 }
