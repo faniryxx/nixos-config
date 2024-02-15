@@ -125,19 +125,19 @@
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
-        "states": {
+        //"states": {
             // "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
+        //    "warning": 30,
+        //    "critical": 15
+        //},
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"]
     },
     "battery#bat2": {
         "bat": "BAT2"
