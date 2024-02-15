@@ -22,6 +22,13 @@
             "DP-2": [1, 2, 3, 4],
             "HDMI-A-1": [5]
          },
+         "format-icons": {
+            "1": "I",
+            "2": "II",
+            "3": "III",
+            "4": "IV",
+            "5": "V"
+         },
          "on-scroll-up": "hyprctl dispatch workspace -1",
          "on-scroll-down": "hyprctl dispatch workspace +1"    
     },
