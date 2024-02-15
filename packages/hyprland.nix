@@ -11,9 +11,13 @@
         orchis-theme
         pavucontrol
         sassc
+        swaylock-effects
         themechanger
         waybar
         wlogout
         wofi
     ];
+
+    # Set up swaylock correctly
+    security.pam.services.swaylock = {};
 }
