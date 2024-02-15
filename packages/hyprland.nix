@@ -12,6 +12,7 @@
         pavucontrol
         sassc
         swaylock-effects
+        swaynotificationcenter
         themechanger
         waybar
         wlogout
