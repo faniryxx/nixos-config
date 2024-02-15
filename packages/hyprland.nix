@@ -22,6 +22,7 @@
         wlogout
         wofi
         xarchiver
+        xdg-desktop-portal-hyprland
     ];
 
     # Set up swaylock correctly
