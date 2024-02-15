@@ -13,12 +13,7 @@
       ../../system/default.nix
     ];
 
-  networking.hostName = "tsunami"; # Define your hostname.
-
-  environment.systemPackages = with pkgs; [
-    openrgb-with-all-plugins
-    i2c-tools
-  ];
+  networking.hostName = "lagoon"; # Define your hostname.
 
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
@@ -26,6 +21,17 @@
   # Enable hyprland
   programs.hyprland.enable = true;
 
-  # OpenRGB udev rules
-  services.udev.extraRules = builtins.readFile ./60-openrgb.rules;
+  # asusctl
+  services = {
+    asusd = {
+      enable = true;
+      enableUserService = true;
+    };
+  };
+
+  environment.systemPackages = with pkgs; [
+    asusctl
+    supergfxctl
+    gnomeExtensions.supergfxctl-gex
+  ];
 }
