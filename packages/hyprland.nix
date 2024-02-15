@@ -21,6 +21,7 @@
         waybar
         wlogout
         wofi
+        xarchiver
     ];
 
     # Set up swaylock correctly
