@@ -9,6 +9,7 @@
     # Add font-awesome for waybar icons
     fonts.packages = with pkgs; [
         font-awesome
+        nerdfonts
     ];
 
     # Enable networking

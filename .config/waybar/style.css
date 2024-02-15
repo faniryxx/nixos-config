@@ -1,24 +1,35 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    /* font-family: "JetBrainsMono Nerd Font Mono", "OpenDyslexicM Nerd Font"; */
+    font-size: 17px; 
+
+    border: none;
+	border-radius: 8;
 }
 
 window#waybar {
     background-color: rgba(0, 0, 0, 0.473);
-    border-bottom: 3px solid rgba(0, 0, 0, 0.473);
+    /* border-bottom: 3px solid rgba(0, 0, 0, 0.473);
     color: #ffffff;
     transition-property: background-color;
-    transition-duration: .5s;
+    transition-duration: .5s; 
+    background: transparent; */
+}
+
+.modules-left {
+    margin-left: 10px;
+}
+.modules-right {
+    margin-right: 10px;
 }
 
 window#waybar.hidden {
-    opacity: 0.2;
+    opacity: 1;
 }
 
 /*
 window#waybar.empty {
-    background-color: transparent;
+    background-color: #ff0000;
 }
 window#waybar.solo {
     background-color: #FFFFFF;
@@ -43,28 +54,30 @@ button {
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-button:hover {
-    background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+#workspaces {
+	padding: 0 14px;
+    font-family: "JetBrainsMono Nerd Font Mono Bold";
 }
-
 #workspaces button {
-    padding: 0 5px;
-    background-color: transparent;
-    color: #ffffff;
+    padding: 1px 5px;
+    background: transparent;
+    color: #4c566a;
 }
-
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+    box-shadow: inherit;
+    text-shadow: inherit;
+    color: #6d6d6d;
 }
 
 #workspaces button.active {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    /* color: #BC83E3; */
+	color: #ffffff;
+    transition: all 0.2s cubic-bezier(.55,-0.68,.48,1.682);
 }
-
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    color: #11111b;
+    background: #fab387;
+    border-radius: 10px;
 }
 
 #mode {
@@ -90,11 +103,13 @@ button:hover {
 #mpd {
     padding: 0 10px;
     color: #ffffff;
+    font-family: "JetBrainsMono Nerd Font Mono";
 }
 
-#window,
-#workspaces {
+#window {
     margin: 0 4px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-family: "GohuFont11NFP"; */
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -108,11 +123,11 @@ button:hover {
 }
 
 #clock {
-    background-color: #0a002c;
+    background-color: transparent;
 }
 
 #battery {
-    background-color: #0a002c;
+    background-color: transparent;
     color: #ffffff;
 }
 
@@ -144,12 +159,12 @@ label:focus {
 }
 
 #cpu {
-    background-color: #0a002c;
+    background-color: transparent;
     color: #ffffff;
 }
 
 #memory {
-    background-color: #0a002c;
+    background-color: transparent;
 }
 
 #disk {
@@ -161,11 +176,11 @@ label:focus {
 }
 
 #bluetooth {
-    background-color: #0a002c;
+    background-color: transparent;
 }
 
 #network {
-    background-color: #0a002c;
+    background-color: transparent;
 }
 
 #network.disconnected {
@@ -173,12 +188,12 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #0a002c;
+    background-color: transparent;
     color: #ffffff;
 }
 
 #pulseaudio.muted {
-    background-color: #0a002c;
+    background-color: transparent;
     color: #ffffff;
 }
 
@@ -305,3 +320,6 @@ label:focus {
     background-color: #0069d4;
 }
 
+#custom-sep {
+    color: #535353;
+}
