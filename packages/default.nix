@@ -9,6 +9,7 @@
         discord
         git
         gnome.gnome-terminal
+        home-manager
         pfetch
         pinta
         spicetify-cli

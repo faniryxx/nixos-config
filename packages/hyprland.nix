@@ -3,6 +3,7 @@
 
 {
     environment.systemPackages = with pkgs; [
+        glib
         libsForQt5.dolphin
         libsForQt5.breeze-icons
         libsForQt5.qt5.qtwayland
@@ -10,6 +11,7 @@
         libsForQt5.qtstyleplugin-kvantum
         networkmanager_dmenu
         networkmanagerapplet
+        nwg-look
         orchis-theme
         pavucontrol
         sassc

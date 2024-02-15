@@ -31,4 +31,17 @@
 
   # Let home Manager install and manage itself.
   programs.home-manager.enable = true;
+  
+  # For future reference:
+  # To modify cursorTheme, declare it here
+  # Set it in nwg-look and ONLY export ~/.icons/default/index.theme and ~/.config/xsettingsd/xsettingsd.conf
+  gtk.enable = true;
+  gtk.theme.name = "Orchis-Teal-Dark";
+  gtk.theme.package = pkgs.orchis-theme;
+  #gtk.font.name = "Sans 10"; 
+  gtk.cursorTheme.name = "Bibata-Original-Classic";
+  gtk.cursorTheme.package = pkgs.bibata-cursors;
+  #gtk.cursorTheme.name = "Banana";
+  #gtk.cursorTheme.package = pkgs.banana-cursor;
+  #gtk.cursorTheme.size = 24;
 }
