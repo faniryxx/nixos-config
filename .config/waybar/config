@@ -1,6 +1,6 @@
 {
     // Enable on primary monitor only
-    "output": ["DP-2"],
+    "output": ["DP-2", "eDP-2"],
     "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 40, // Waybar height (to be removed for auto height)
