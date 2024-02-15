@@ -31,7 +31,7 @@
 
   environment.systemPackages = with pkgs; [
     asusctl
+    brightnessctl
     supergfxctl
-    gnomeExtensions.supergfxctl-gex
   ];
 }
