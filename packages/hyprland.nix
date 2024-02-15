@@ -4,6 +4,8 @@
 {
     environment.systemPackages = with pkgs; [
         libsForQt5.dolphin
+        libsForQt5.breeze-icons
+        libsForQt5.qt5.qtwayland
         libsForQt5.qt5ct
         libsForQt5.qtstyleplugin-kvantum
         networkmanager_dmenu
