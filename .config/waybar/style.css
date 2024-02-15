@@ -5,7 +5,7 @@
 }
 
 window#waybar {
-    background-color: rgba(255, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.473);
     border-bottom: 3px solid rgba(100, 114, 125, 0);
     color: #ffffff;
     transition-property: background-color;
@@ -108,12 +108,12 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+    background-color: #0a002c;
 }
 
 #battery {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #0a002c;
+    color: #ffffff;
 }
 
 #battery.charging, #battery.plugged {
@@ -144,12 +144,12 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+    background-color: #0a002c;
+    color: #ffffff;
 }
 
 #memory {
-    background-color: #9b59b6;
+    background-color: #0a002c;
 }
 
 #disk {
@@ -160,8 +160,12 @@ label:focus {
     background-color: #90b1b1;
 }
 
+#bluetooth {
+    background-color: #0a002c;
+}
+
 #network {
-    background-color: #2980b9;
+    background-color: #0a002c;
 }
 
 #network.disconnected {
@@ -169,13 +173,13 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    background-color: #0a002c;
+    color: #ffffff;
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+    background-color: #0a002c;
+    color: #ffffff;
 }
 
 #wireplumber {
@@ -300,3 +304,4 @@ label:focus {
 #privacy-item.audio-out {
     background-color: #0069d4;
 }
+
