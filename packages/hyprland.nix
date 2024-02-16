@@ -6,7 +6,6 @@
         adwaita-qt
         glib
         gnome.nautilus
-        libsForQt5.dolphin
         libsForQt5.breeze-icons
         libsForQt5.qt5.qtwayland
         libsForQt5.qt5ct # needed to set icon theme in qt apps (dolphin)
