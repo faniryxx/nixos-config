@@ -4,7 +4,7 @@
 {
     environment.systemPackages = with pkgs; [
         glib
-        libsForQt5.dolphin
+        gnome.nautilus
         libsForQt5.breeze-icons
         libsForQt5.qt5.qtwayland
         libsForQt5.qt5ct
