@@ -4,7 +4,7 @@ nixos-rebuild switch --flake /home/faniryxx/nixos-config#tsunami-hyprland
 
 echo "Copying hyprland configuration to ~/.config ..."
 mkdir -p /home/faniryxx/.config/hypr/
-cp /home/faniryxx/nixos-config/.config/hypr/tsunami.conf /home/faniryxx/.config/hypr/hyprland.conf
+cp /home/faniryxx/nixos-config/.config/hypr/tsunami/hyprland.conf /home/faniryxx/.config/hypr/hyprland.conf
 
 echo "Copying waybar configuration to ~/.config ..."
 mkdir -p /home/faniryxx/.config/waybar/

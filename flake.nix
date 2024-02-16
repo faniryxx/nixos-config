@@ -71,7 +71,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.faniryxx = import ./home-manager/home.nix;
+            home-manager.users.faniryxx = import ./home-manager/tsunami-hyprland.nix;
 
             # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
           }
