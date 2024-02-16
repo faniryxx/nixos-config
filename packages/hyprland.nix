@@ -3,12 +3,13 @@
 
 {
     environment.systemPackages = with pkgs; [
+        adwaita-qt
         glib
         gnome.nautilus
+        libsForQt5.dolphin
         libsForQt5.breeze-icons
         libsForQt5.qt5.qtwayland
-        libsForQt5.qt5ct
-        libsForQt5.qtstyleplugin-kvantum
+        libsForQt5.qt5ct # needed to set icon theme in qt apps (dolphin)
         networkmanager_dmenu
         networkmanagerapplet
         nwg-look
