@@ -1,3 +1,4 @@
+# Common home-manager settings
 { config, pkgs, ... }:
 
 {
@@ -44,12 +45,4 @@
   #gtk.cursorTheme.name = "Banana";
   #gtk.cursorTheme.package = pkgs.banana-cursor;
   #gtk.cursorTheme.size = 24;
-
-  # Fix for dolphin white background on adwaita-dark theme
-  #home.file.".config/kdeglobals".source = ./.config/kdeglobals;
-  home.file = {
-    ".config/kdeglobals" = {
-      source = config.lib.file.mkOutOfStoreSymlink .config/kdeglobals;
-    };
-  };
 }
