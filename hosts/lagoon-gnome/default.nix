@@ -10,7 +10,7 @@
       ./hardware-configuration.nix
       ../../packages/default.nix
       ../../packages/gnome.nix
-      ../../gnome/default.nix
+      ../../pop-shell/default.nix
       ../../system/default.nix
     ];
 
