@@ -6,6 +6,9 @@
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
 
+    # Enable ntfs kerned module to access windows partitions
+    boot.supportedFilesystems = [ "ntfs" ];
+
     # Add font-awesome for waybar icons
     fonts.packages = with pkgs; [
         font-awesome
