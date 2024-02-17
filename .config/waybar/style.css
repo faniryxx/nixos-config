@@ -9,11 +9,6 @@
 
 window#waybar {
     background-color: rgba(0, 0, 0, 0.473);
-    /* border-bottom: 3px solid rgba(0, 0, 0, 0.473);
-    color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s; 
-    background: transparent; */
 }
 
 .modules-left {
@@ -26,15 +21,6 @@ window#waybar {
 window#waybar.hidden {
     opacity: 1;
 }
-
-/*
-window#waybar.empty {
-    background-color: #ff0000;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
 
 window#waybar.termite {
     background-color: #3F3F3F;
@@ -108,8 +94,6 @@ button {
 
 #window {
     margin: 0 4px;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    font-family: "GohuFont11NFP"; */
 }
 
 /* If workspaces is the leftmost module, omit left margin */
