@@ -8,7 +8,7 @@
         gnome.nautilus
         libsForQt5.breeze-icons
         libsForQt5.qt5.qtwayland
-        libsForQt5.qt5ct # needed to set icon theme in qt apps (dolphin)
+        libsForQt5.qt5ct
         networkmanager_dmenu
         networkmanagerapplet
         nwg-look
