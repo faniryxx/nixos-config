@@ -1,21 +1,17 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { config, pkgs, ... }:
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
       ./hardware-configuration.nix
       ../../packages/default.nix
       ../../packages/hyprland.nix
       ../../system/default.nix
     ];
 
-  networking.hostName = "lagoon"; # Define your hostname.
+  networking.hostName = "lagoon";
 
-  # Enable the GNOME Desktop Environment.
+  # Enable the GNOME Display manager
   services.xserver.displayManager.gdm.enable = true;
 
   # Enable hyprland
