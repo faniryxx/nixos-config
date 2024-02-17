@@ -10,7 +10,7 @@
       ./hardware-configuration.nix
       ../../packages/default.nix
       ../../packages/gnome.nix
-      ../../pop-shell/default.nix
+      ../../pop-shell/kb_shortcuts.nix
       ../../system/default.nix
     ];
 
