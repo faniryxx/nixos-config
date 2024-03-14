@@ -19,9 +19,12 @@
   # Enable the GNOME Display manager
   services.xserver.displayManager.gdm.enable = true;
 
+  services = {
+    udev.packages = with pkgs; [ 
+        openrgb-with-all-plugins
+    ];
+  };
+
   # Enable hyprland
   programs.hyprland.enable = true;
-
-  # OpenRGB udev rules
-  services.udev.extraRules = builtins.readFile ./60-openrgb.rules;
 }
