@@ -10,6 +10,7 @@
         git
         gnome.gnome-terminal
         home-manager
+        p7zip
         pfetch
         pinta
         spicetify-cli
