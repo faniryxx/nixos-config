@@ -21,10 +21,10 @@
 
   programs.home-manager.enable = true;
 
-  home.file = {
+  # home.file = {
     # zsh config
-    ".zshrc" = {
-      source = config.lib.file.mkOutOfStoreSymlink ../.zshrc;
-    };
-  };
+  #  ".zshrc" = {
+  #    source = config.lib.file.mkOutOfStoreSymlink ../.zshrc;
+  #  };
+  #};
 }

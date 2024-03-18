@@ -29,7 +29,16 @@
 
     # Set zsh as default shell
     programs.zsh.enable = true;
+    programs.zsh.autosuggestions.enable = true;
+    programs.zsh.syntaxHighlighting.enable = true;
     users.defaultUserShell = pkgs.zsh;
+
+    # Configure Oh my Zsh
+    programs.zsh.ohMyZsh = {
+        enable = true;
+        plugins = [ "git" "sudo" "thefuck"];
+        theme = "dst";
+    };
 
     # Enable the X11 windowing system.
     services.xserver.enable = true;
