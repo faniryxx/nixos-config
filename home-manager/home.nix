@@ -20,11 +20,4 @@
   home.stateVersion = "23.11";
 
   programs.home-manager.enable = true;
-
-  # home.file = {
-    # zsh config
-  #  ".zshrc" = {
-  #    source = config.lib.file.mkOutOfStoreSymlink ../.zshrc;
-  #  };
-  #};
 }

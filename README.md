@@ -59,7 +59,6 @@ The main objective of the repo is to help create near-identic environments on mu
     ├── README.md
     ├── system
     │   └── default.nix                         # Common system settings: default shell, bluetooth status, enabled services, etc.
-    └── .zshrc                                  # Config file for zsh shell
 
 ### Screenshots
 Host `tsunami` running Hyprland with Waybar:
