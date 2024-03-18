@@ -16,6 +16,7 @@
         pinta
         spicetify-cli
         spotify
+        swaybg
         terminator
         vim
         vlc
