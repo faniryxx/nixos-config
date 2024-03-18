@@ -31,6 +31,7 @@
     programs.zsh.enable = true;
     programs.zsh.autosuggestions.enable = true;
     programs.zsh.syntaxHighlighting.enable = true;
+    programs.zsh.shellInit = "pfetch";
     users.defaultUserShell = pkgs.zsh;
 
     # enable thefuck
