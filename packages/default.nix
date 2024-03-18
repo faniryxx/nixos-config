@@ -10,6 +10,7 @@
         git
         gnome.gnome-terminal
         home-manager
+        loupe
         p7zip
         pfetch
         pinta
