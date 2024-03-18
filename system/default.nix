@@ -33,6 +33,9 @@
     programs.zsh.syntaxHighlighting.enable = true;
     users.defaultUserShell = pkgs.zsh;
 
+    # enable thefuck
+    programs.thefuck.enable = true;
+
     # Configure Oh my Zsh
     programs.zsh.ohMyZsh = {
         enable = true;
