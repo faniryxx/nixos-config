@@ -35,6 +35,7 @@
     programs.zsh.shellAliases = {
         update-tsunami = "sudo nixos-rebuild switch --flake /home/faniryxx/nixos-config#tsunami";
         update-lagoon = "sudo nixos-rebuild switch --flake /home/faniryxx/nixos-config#lagoon";
+        cat = "bat";
     };
     users.defaultUserShell = pkgs.zsh;
 

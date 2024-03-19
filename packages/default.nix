@@ -6,6 +6,7 @@
     # Packages to be installed by default for all hosts
     environment.systemPackages = with pkgs; [
         adwaita-qt
+        bat
         curl
         discord
         git
