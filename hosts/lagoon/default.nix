@@ -5,17 +5,15 @@
     [
       ./hardware-configuration.nix
       ../../packages/default.nix
-      ../../packages/hyprland.nix
+      ../../pop-shell/kb_shortcuts.nix
       ../../system/default.nix
     ];
 
   networking.hostName = "lagoon";
 
-  # Enable the GNOME Display manager
+  # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
-
-  # Enable hyprland
-  programs.hyprland.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
 
   # asusctl
   services = {
@@ -27,7 +25,7 @@
 
   environment.systemPackages = with pkgs; [
     asusctl
-    brightnessctl
     supergfxctl
+    gnomeExtensions.supergfxctl-gex
   ];
 }
