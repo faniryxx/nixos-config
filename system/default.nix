@@ -32,6 +32,10 @@
     programs.zsh.autosuggestions.enable = true;
     programs.zsh.syntaxHighlighting.enable = true;
     programs.zsh.shellInit = "pfetch";
+    programs.zsh.shellAliases = {
+        update-tsunami = "sudo nixos-rebuid switch --flake /home/faniryxx/nixos-config#tsunami";
+        update-lagoon = "sudo nixos-rebuid switch --flake /home/faniryxx/nixos-config#lagoon";
+    };
     users.defaultUserShell = pkgs.zsh;
 
     # enable thefuck
