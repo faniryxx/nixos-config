@@ -5,7 +5,6 @@
     [
       ./hardware-configuration.nix
       ../../packages/default.nix
-      ../../packages/hyprland.nix
       ../../system/default.nix
     ];
 

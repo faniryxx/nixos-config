@@ -9,10 +9,10 @@
 
   outputs = inputs@{ nixpkgs, home-manager, ... }: {
     nixosConfigurations = {
-      lagoon-gnome = nixpkgs.lib.nixosSystem {
+      lagoon = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./hosts/lagoon-gnome
+          ./hosts/lagoon
 
           # make home-manager as a module of nixos
           # so that home-manager configuration will be deployed automatically when executing `nixos-rebuild switch`
@@ -20,16 +20,16 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.faniryxx = import ./home-manager/home.nix;
+            home-manager.users.faniryxx = import ./home-manager/lagoon.nix;
 
             # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
           }
         ];
       };
-      lagoon-hyprland = nixpkgs.lib.nixosSystem {
+      tsunami = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./hosts/lagoon-hyprland
+          ./hosts/tsunami
 
           # make home-manager as a module of nixos
           # so that home-manager configuration will be deployed automatically when executing `nixos-rebuild switch`
@@ -37,41 +37,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.faniryxx = import ./home-manager/lagoon-hyprland.nix;
-
-            # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
-          }
-        ];
-      };
-      tsunami-gnome = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = [
-          ./hosts/tsunami-gnome
-
-          # make home-manager as a module of nixos
-          # so that home-manager configuration will be deployed automatically when executing `nixos-rebuild switch`
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.faniryxx = import ./home-manager/home.nix;
-
-            # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
-          }
-        ];
-      };
-      tsunami-hyprland = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = [
-          ./hosts/tsunami-hyprland
-
-          # make home-manager as a module of nixos
-          # so that home-manager configuration will be deployed automatically when executing `nixos-rebuild switch`
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.faniryxx = import ./home-manager/tsunami-hyprland.nix;
+            home-manager.users.faniryxx = import ./home-manager/tsunami.nix;
 
             # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
           }

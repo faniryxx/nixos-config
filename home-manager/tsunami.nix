@@ -4,7 +4,6 @@
 {
   imports = [
     ./home.nix
-    ./hyprland.nix
     ];
 
   home.file = {
