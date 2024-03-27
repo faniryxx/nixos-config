@@ -27,6 +27,11 @@
     # Enable flakes
     nix.settings.experimental-features = ["nix-command" "flakes"];
 
+    programs.thunar.enable = true;
+    # To save thunar preferences settings
+    programs.xfconf.enable = true;
+    services.tumbler.enable = true; # Thumbnail support for images
+
     # Set zsh as default shell
     programs.zsh.enable = true;
     programs.zsh.autosuggestions.enable = true;

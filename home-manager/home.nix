@@ -21,6 +21,11 @@
 
   programs.home-manager.enable = true;
 
+  # Set xarchiver as default archive opener
+  xdg.mimeApps.defaultApplications = {
+    "application/zip" = ["xarchiver.desktop"];
+  };
+
   # For future reference:
   # To modify cursorTheme, declare it here
   # Set it in nwg-look and ONLY export ~/.icons/default/index.theme and ~/.config/xsettingsd/xsettingsd.conf
@@ -81,7 +86,7 @@
 
     # Set programs that you use
     $terminal = gnome-terminal
-    $fileManager = nautilus
+    $fileManager = thunar
     $menu = wofi -i -O alphabetical --show drun
 
     # Some default env vars.

@@ -14,7 +14,6 @@
         git
         glib
         gnome.gnome-terminal
-        gnome.nautilus
         home-manager
         i2c-tools
         libsForQt5.breeze-icons
