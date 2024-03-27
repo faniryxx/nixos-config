@@ -12,6 +12,10 @@
   boot.initrd.kernelModules = [ "amdgpu" ];
   boot.kernelModules = [ "kvm-amd" "i2c-dev" "i2c-piix4"];
   boot.extraModulePackages = [ ];
+  # For ddcutil
+  services.udev.extraRules = ''
+        KERNEL=="i2c-[0-9]*", GROUP="i2c", MODE="0660"
+  '';
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/c76b26ae-0ade-4292-b7ff-9bf2769620b1";

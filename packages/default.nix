@@ -9,11 +9,14 @@
         bat
         curl
         discord
+        ddcui
+        ddcutil
         git
         glib
         gnome.gnome-terminal
         gnome.nautilus
         home-manager
+        i2c-tools
         libsForQt5.breeze-icons
         libsForQt5.qt5.qtwayland
         libsForQt5.qt5ct

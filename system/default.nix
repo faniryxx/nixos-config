@@ -93,7 +93,7 @@
     users.users.faniryxx = {
         isNormalUser = true;
         description = "faniryxx";
-        extraGroups = [ "networkmanager" "wheel" ];
+        extraGroups = [ "networkmanager" "wheel" "i2c"];
         packages = with pkgs; [
             firefox
         ];
