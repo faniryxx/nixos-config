@@ -21,6 +21,7 @@
         libsForQt5.qt5.qtwayland
         libsForQt5.qt5ct
         loupe
+        lutris
         networkmanager_dmenu
         networkmanagerapplet
         nwg-look
@@ -42,6 +43,9 @@
         vscode
         waybar
         wget
+        wineWowPackages.waylandFull
+        wineWowPackages.fonts
+        winetricks
         wlogout
         wofi
         xarchiver
