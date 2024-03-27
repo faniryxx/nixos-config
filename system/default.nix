@@ -36,7 +36,7 @@
     programs.zsh.enable = true;
     programs.zsh.autosuggestions.enable = true;
     programs.zsh.syntaxHighlighting.enable = true;
-    programs.zsh.shellInit = "pfetch";
+    programs.zsh.interactiveShellInit = "pfetch";
     programs.zsh.shellAliases = {
         update-tsunami = "sudo nixos-rebuild switch --flake /home/faniryxx/nixos-config#tsunami";
         update-lagoon = "sudo nixos-rebuild switch --flake /home/faniryxx/nixos-config#lagoon";
@@ -109,6 +109,7 @@
 
     # Enable the OpenSSH daemon.
     services.openssh.enable = true;
+    services.openssh.allowSFTP = true;
 
     system.stateVersion = "23.11"; # Did you read the comment?
 }
