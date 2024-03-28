@@ -45,6 +45,7 @@
         wineWowPackages.waylandFull
         wineWowPackages.fonts
         winetricks
+        wireguard-tools
         wlogout
         wofi
         xarchiver
