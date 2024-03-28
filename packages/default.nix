@@ -42,10 +42,10 @@
         vscode
         waybar
         wget
-        wineWowPackages.waylandFull
-        wineWowPackages.fonts
+        winePackages.fonts
         winetricks
         wireguard-tools
+        wineWowPackages.stable
         wlogout
         wofi
         xarchiver
